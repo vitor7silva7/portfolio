@@ -1,31 +1,58 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vítor Silva</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background-color: #fdfdfd;
-      color: #222;
-      font-family: 'Cizel', serif;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    h1 {
-      font-size: 3.5rem;
-      opacity: 0;
-      transform: translateY(20px);
       animation: fadeInUp 2s ease-out forwards;
     }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #888;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p, ul {
+      max-width: 700px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
     @keyframes fadeInUp {
       to {
         opacity: 1;
@@ -35,6 +62,57 @@
   </style>
 </head>
 <body>
-  <h1>Vítor Silva</h1>
+
+  <!-- Secção 1: Landing -->
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#cv">CV</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio" class="header">
+    <h1>Vítor Silva</h1>
+  </section>
+
+  <!-- Secção 2: Sobre -->
+  <section id="sobre">
+    <div>
+      <h2>Sobre Mim</h2>
+      <p>Sou sociólogo, investigador e editor. Atualmente concluo o mestrado em Sociologia no ISCTE-IUL, com interesse em reflexividade de género, regimes familiares e mudança social. Neste espaço partilho o meu percurso, projetos e textos.</p>
+    </div>
+  </section>
+
+  <!-- Secção 3: Projetos -->
+  <section id="projetos">
+    <div>
+      <h2>Projetos</h2>
+      <ul>
+        <li><strong>Dissertação de Mestrado:</strong> Reflexividade de género e regimes familiares</li>
+        <li><strong>Publicações Institucionais:</strong> Colaboração editorial na Assembleia da República</li>
+        <li><strong>Análise Qualitativa:</strong> Estudos com MAXQDA e entrevistas multiperspectiva</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Secção 4: CV -->
+  <section id="cv">
+    <div>
+      <h2>Currículo</h2>
+      <p>Licenciado em Sociologia. Experiência nas áreas de investigação qualitativa, género e cultura. Técnico superior na área editorial parlamentar. Conhecimento de software como MAXQDA, SPSS e Power BI.</p>
+    </div>
+  </section>
+
+  <!-- Secção 5: Contacto -->
+  <section id="contacto">
+    <div>
+      <h2>Contacto</h2>
+      <p>Envia-me um email: <a href="mailto:teuemail@example.com">teuemail@example.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vítor Silva. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
