@@ -1,4 +1,32 @@
-      animation: fadeInUp 2s ease-out forwards;
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vítor Silva</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      color: #222;
+      background-color: #fdfdfd;
+      line-height: 1.6;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 4rem 2rem;
     }
 
     nav {
@@ -24,6 +52,13 @@
 
     nav a:hover {
       color: #888;
+    }
+
+    h1 {
+      font-size: 4rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 2s ease-out forwards;
     }
 
     h2 {
@@ -63,7 +98,6 @@
 </head>
 <body>
 
-  <!-- Secção 1: Landing -->
   <nav>
     <a href="#sobre">Sobre</a>
     <a href="#projetos">Projetos</a>
@@ -71,44 +105,32 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
-  <section id="inicio" class="header">
+  <section id="inicio">
     <h1>Vítor Silva</h1>
   </section>
 
-  <!-- Secção 2: Sobre -->
   <section id="sobre">
-    <div>
-      <h2>Sobre Mim</h2>
-      <p>Sou sociólogo, investigador e editor. Atualmente concluo o mestrado em Sociologia no ISCTE-IUL, com interesse em reflexividade de género, regimes familiares e mudança social. Neste espaço partilho o meu percurso, projetos e textos.</p>
-    </div>
+    <h2>Sobre Mim</h2>
+    <p>Sou sociólogo, investigador e editor. Atualmente concluo o mestrado em Sociologia no ISCTE-IUL, com interesse em reflexividade de género, regimes familiares e mudança social. Neste espaço partilho o meu percurso, projetos e textos.</p>
   </section>
 
-  <!-- Secção 3: Projetos -->
   <section id="projetos">
-    <div>
-      <h2>Projetos</h2>
-      <ul>
-        <li><strong>Dissertação de Mestrado:</strong> Reflexividade de género e regimes familiares</li>
-        <li><strong>Publicações Institucionais:</strong> Colaboração editorial na Assembleia da República</li>
-        <li><strong>Análise Qualitativa:</strong> Estudos com MAXQDA e entrevistas multiperspectiva</li>
-      </ul>
-    </div>
+    <h2>Projetos</h2>
+    <ul>
+      <li><strong>Dissertação de Mestrado:</strong> Reflexividade de género e regimes familiares</li>
+      <li><strong>Publicações Institucionais:</strong> Colaboração editorial na Assembleia da República</li>
+      <li><strong>Análise Qualitativa:</strong> Estudos com MAXQDA e entrevistas multiperspectiva</li>
+    </ul>
   </section>
 
-  <!-- Secção 4: CV -->
   <section id="cv">
-    <div>
-      <h2>Currículo</h2>
-      <p>Licenciado em Sociologia. Experiência nas áreas de investigação qualitativa, género e cultura. Técnico superior na área editorial parlamentar. Conhecimento de software como MAXQDA, SPSS e Power BI.</p>
-    </div>
+    <h2>Currículo</h2>
+    <p>Licenciado em Sociologia. Experiência nas áreas de investigação qualitativa, género e cultura. Técnico superior na área editorial parlamentar. Conhecimento de software como MAXQDA, SPSS e Power BI.</p>
   </section>
 
-  <!-- Secção 5: Contacto -->
   <section id="contacto">
-    <div>
-      <h2>Contacto</h2>
-      <p>Envia-me um email: <a href="mailto:teuemail@example.com">teuemail@example.com</a></p>
-    </div>
+    <h2>Contacto</h2>
+    <p>Envia-me um email: <a href="mailto:teuemail@example.com">teuemail@example.com</a></p>
   </section>
 
   <footer>
